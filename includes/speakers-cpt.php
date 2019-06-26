@@ -36,7 +36,7 @@ function ec_speaker_post_type() {
 		'label'                 => 'Speaker',
 		'description'           => 'Conference Speakers',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'page-attributes' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'page-attributes', 'excerpt' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => true,
 		'public'                => true,
