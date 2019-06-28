@@ -3,7 +3,7 @@
 // Register Custom Post Type
 function ec_speaker_post_type() {
 
-	$labels = array(
+	$labels = [
 		'name'                  => 'Speakers',
 		'singular_name'         => 'Speaker',
 		'menu_name'             => 'Speakers',
@@ -31,28 +31,28 @@ function ec_speaker_post_type() {
 		'items_list'            => 'Speakers list',
 		'items_list_navigation' => 'Speakers list navigation',
 		'filter_items_list'     => 'Filter speakers list',
-	);
-	$args = array(
-		'label'                 => 'Speaker',
-		'description'           => 'Conference Speakers',
-		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'page-attributes' ),
-		'taxonomies'            => array( 'category', 'post_tag' ),
-		'hierarchical'          => true,
-		'public'                => true,
-		'show_ui'               => true,
-		'show_in_menu'          => true,
-		'menu_position'         => 5,
-		'menu_icon'             => 'dashicons-businessperson',
-		'show_in_admin_bar'     => true,
-		'show_in_nav_menus'     => true,
-		'can_export'            => true,
-		'has_archive'           => true,
-		'exclude_from_search'   => false,
-		'publicly_queryable'    => true,
-		'capability_type'       => 'page',
-		'show_in_rest'          => true,
-	);
+	];
+	$args   = [
+		'label'               => 'Speaker',
+		'description'         => 'Conference Speakers',
+		'labels'              => $labels,
+		'supports'            => [ 'title', 'editor', 'thumbnail', 'page-attributes' ],
+		'taxonomies'          => [ 'category', 'post_tag' ],
+		'hierarchical'        => true,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'menu_position'       => 5,
+		'menu_icon'           => 'dashicons-businessperson',
+		'show_in_admin_bar'   => true,
+		'show_in_nav_menus'   => true,
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'page',
+		'show_in_rest'        => true,
+	];
 	register_post_type( 'speakers', $args );
 
 }
