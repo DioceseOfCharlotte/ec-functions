@@ -3,7 +3,7 @@
  * Plugin Name: EC Functions
  * Plugin URI:  https://github.com/DioceseOfCharlotte/ec-functions
  * Description: CSS debugger
- * Version:     1.0.0
+ * Version:     1.1.0
  * Author:      Billy Griffith
  * Author URI:  https://github.com/DioceseOfCharlotte
  * Text Domain: doc-ec
