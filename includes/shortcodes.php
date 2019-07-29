@@ -26,7 +26,7 @@ function ec_listrow_shortcode( $atts ) {
 	$entry  = GFAPI::get_entry( $atts['entry'] );
 	$row    = $atts['row'];
 	$field  = $atts['field'];
-	$column = $atts['column'];
+	$column = $atts['column_title'];
 
 	$lists = maybe_unserialize( rgars( $entry, $field ) );
 
